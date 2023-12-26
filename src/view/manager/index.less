@@ -2,6 +2,28 @@
     width: 100vw;
     height: 100vh;
 }
+.header{
+    display: flex;
+    position: relative;
+    .header_tit{
+        width: 100vw;
+        position: absolute;
+        justify-content: center;
+    }
+    .personal_img{
+        position: absolute;
+        right: 0;
+        display: flex;
+        gap: 6px;
+        font-size: 16px;
+        .quit{
+            margin-left: 8px;
+            font-weight: 700;
+            color: #e45649;
+            cursor: pointer;
+        }
+    }
+}
 .title{
     color: #000;
     font-size: 24px;
@@ -12,4 +34,13 @@
     display: flex;
     padding: 12px;
     gap: 12px;
+}
+.score_list{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    .score_item{
+        display: flex;
+        gap: 6px;
+    }
 }

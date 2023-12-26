@@ -4,6 +4,7 @@ import MyScore from "./myScore"
 import ManagerPractice from "./managePractice"
 import UserManage from "./userManage"
 import StudentManage from "./studentManage"
+import GiveScore from "./givescore"
 const PracticeContent = ({status}) => {
     return (
         <div>
@@ -30,6 +31,10 @@ const PracticeContent = ({status}) => {
             {
                 status === 'managerStudent' &&
                 <StudentManage></StudentManage>
+            }
+            {
+                status === 'giveScore' &&
+                <GiveScore></GiveScore>
             }
         </div>
 

@@ -155,7 +155,7 @@ const InputModal = ({modal,setModal,curPractice,user,fetchData}) => {
                 ownStudent:user.name,
                 name:curPractice.name,
                 teacher:curPractice.owner,
-                score:''
+                score:'[]'
             })
         }
         const res = await addTask({

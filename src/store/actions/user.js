@@ -8,3 +8,9 @@ export const actionNoticeHandle = (info) => {
         dispatch({ type: types.user_handle, info: info });
     };
 };
+export const actionDefaultHandle = () => {
+    return (dispatch) => {
+        localStorage.removeItem('user')
+        dispatch({ type: types.user_handle, info: {name:'',role:''} });
+    };
+};

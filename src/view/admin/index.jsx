@@ -146,7 +146,7 @@ const Admin = () => {
                                         key={index}
                                         >
                                             {
-                                                item.name === 'password'?
+                                                ['password','ensurePassword'].includes(item.name)?
                                                 <Input.Password />
                                                 :
                                                     item.name === 'role'?
